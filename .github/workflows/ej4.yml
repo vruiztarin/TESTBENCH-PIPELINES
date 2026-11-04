@@ -12,5 +12,7 @@ jobs:
       - uses: cschleiden/actions-linter@v1
         with:
           workflows: '[".github/workflows/*.yaml"]'
-      - run: echo "Revision finalizada"
-      esto es un error
+      - run: |
+            echo "Revision finalizada"
+            echo "Hello world! ${{ github.does-not-exit }}""
+      
