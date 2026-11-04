@@ -13,6 +13,6 @@ jobs:
         with:
           workflows: '[".github/workflows/*.yaml"]'
       - run: |
-            echo "Revision finalizada"
-            echo "Hello world! ${{ github.does-not-exit }}"
+            echo Revision finalizada
+            echo Hello world! ${{ github.does-not-exit }}
       
