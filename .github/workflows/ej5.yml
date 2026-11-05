@@ -17,11 +17,11 @@ jobs:
   descargar-carpeta:
     runs-on: ubuntu-latest
     steps:
-      - uses: action/upload-artifact@v7
+      - uses: actions/upload-artifact@v4
         with:
           name: prueba.txt
           path: resultados/
-          
+
 
             
       
