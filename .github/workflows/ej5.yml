@@ -1,8 +1,6 @@
 name: Gestion de arfectos
 on:
   push:
-    branches:
-      - P5
 
 jobs:
   crear-carpeta:
