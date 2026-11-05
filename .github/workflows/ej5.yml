@@ -9,10 +9,19 @@ jobs:
       - run: |
             echo "Inicio de cracion de carpeta."
             mkdir resultados
-            echo "Prueba en la primera linea" >> prueba.txt
-            echo "Prueba de la segunda linea" > prueba.txt
+            echo "Prueba en la primera linea" > prueba.txt
+            echo "Prueba de la segunda linea" >> prueba.txt
             ls
             cat prueba.txt
             mv prueba.txt resultados/
+  descargar-carpeta:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: action/upload-artifact@v7
+        with:
+          name: prueba.txt
+          path: resultados/
+          
+
             
       
