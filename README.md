@@ -1,8 +1,7 @@
-# Ejercicio 4 - Integración de Linter y Verificación de Código
-# ¿De qué trata?
-En un entorno real, antes de desplegar nada, el pipeline debe comprobar automáticamente que el código o los ficheros de configuración no tienen errores de sintaxis.
+# Ejercicio 5 – Compilación y Gestión de Artefactos
+En un flujo DevSecOps real, el pipeline no solo analiza el código, sino que lo compila o empaqueta (un binario, una imagen de Docker, un .zip o los archivos minificados de una web) y guarda el resultado para que pueda ser desplegado o probado en pasos posteriores.
 
-# Objetivos del ejercicio:
-    -Añadir un paso previo que analice la calidad o sintaxis de tus ficheros YAML antes de dar el visto bueno.
-    -Utilizar una acción oficial de la comunidad de GitHub Marketplace (por ejemplo, una herramienta para validar sintaxis de YAML o un linter).
-    -Hacer que el pipeline falle (exit 1) automáticamente si encuentra un error de formato en el código.
+# Objetivo del ejercicio:
+Simular la generación de un artefacto: Crear un paso que genere un fichero local en la máquina virtual del runner (por ejemplo, build/app-v1.zip o un informe security-report.txt).
+
+Persistir el resultado (upload-artifact): Utilizar la acción oficial de GitHub Actions (actions/upload-artifact@v4) para guardar ese fichero como un artefacto descargable desde la propia interfaz de GitHub.

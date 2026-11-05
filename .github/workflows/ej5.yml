@@ -1,0 +1,14 @@
+name: Gestion de arfectos
+on:
+  push:
+    branches:
+      - P5
+
+jobs:
+  crear-carpeta:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+            echo Inicio de cracion de carpeta.
+            mkdir resultados/
+      
