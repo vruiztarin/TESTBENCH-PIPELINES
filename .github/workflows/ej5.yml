@@ -9,5 +9,8 @@ jobs:
       - run: |
             echo "Inicio de cracion de carpeta."
             mkdir resultados
-            ls
+            echo "Prueba en la primera linea" >> prueba.txt
+            echo "Prueba de la segunda linea" > prueba.txt
+            cd resultado/
+            cat prueba.txt
       
