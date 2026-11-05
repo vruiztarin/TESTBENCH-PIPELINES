@@ -7,6 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-            echo Inicio de cracion de carpeta.
+            echo "Inicio de cracion de carpeta."
             mkdir resultados/
       
