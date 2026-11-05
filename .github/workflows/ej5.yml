@@ -11,6 +11,8 @@ jobs:
             mkdir resultados
             echo "Prueba en la primera linea" >> prueba.txt
             echo "Prueba de la segunda linea" > prueba.txt
-            cd resultado/
+            ls
             cat prueba.txt
+            mv prueba.txt resultado/
+            
       
