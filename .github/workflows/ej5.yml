@@ -21,7 +21,3 @@ jobs:
         with:
           name: prueba.txt
           path: resultados/
-
-
-            
-      
