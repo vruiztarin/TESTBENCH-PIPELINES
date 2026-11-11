@@ -14,9 +14,6 @@ jobs:
             ls
             cat prueba.txt
             mv prueba.txt resultados/
-  descargar-carpeta:
-    runs-on: ubuntu-latest
-    steps:
       - uses: actions/upload-artifact@v4
         with:
           name: prueba.txt
