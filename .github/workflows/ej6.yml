@@ -16,5 +16,8 @@ jobs:
             mv prueba.txt resultados/
       - uses: actions/upload-artifact@v4
         with:
-          name: prueba.txt
+          name: prueba
           path: resultados/
+      - uses: actions/download-artifact@v8
+        with:
+          name: prueba
