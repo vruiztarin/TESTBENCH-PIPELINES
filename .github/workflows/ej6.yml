@@ -7,17 +7,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-            echo "Inicio de cracion de carpeta."
             mkdir resultados
             echo "Prueba en la primera linea" > prueba.txt
             echo "Prueba de la segunda linea" >> prueba.txt
-            ls
-            cat prueba.txt
             mv prueba.txt resultados/
       - uses: actions/upload-artifact@v4
         with:
           name: prueba
           path: resultados/
+  descargar:
+    needs: crear-carpeta
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/download-artifact@v8
-        with:
-          name: prueba
+      - run: ls
