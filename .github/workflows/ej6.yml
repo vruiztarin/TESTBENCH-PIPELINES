@@ -20,4 +20,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v8
-      - run: ls
+      - run: |
+            ls
+            cat pruebas.txt
